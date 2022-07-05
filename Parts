@@ -1,0 +1,13 @@
+Parts I used: 
+Amount	Name	Technical name 
+1	Arduino Uno 	Arduino Uno 
+3	Buttons	Normal N/0 pushbuttons for breadboards
+1	LCD display	1602A
+1	LCD driver module	PCF8574 i2c Driver Module
+1	Side switch 	
+3	Resistors 	100kOhm resistors 
+1	9V rechargeable battery	HR 6F22
+1	Clock module 	MH-Real-Time Clock Modules-2
+1	X4 Seven segment display	5641AS
+1	Breadboard 	MB102
+1	Humility and temperature sensor	DHT-11
