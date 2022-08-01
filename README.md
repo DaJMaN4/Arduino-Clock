@@ -1,8 +1,8 @@
-Arduino Clock V1
+# Arduino Clock V1
 
 This document describes how my Arduino clock V1 works
 
-# Features:
+## Features:
 
 Measuring temperature and humidity.
 
@@ -10,15 +10,15 @@ DHT-11 is a module that I used on the clock, it can sense temperature and humidi
 
 the one I used, has a circuit board on it, connections look like this:
 
-Current time:
+### Current time:
 
 With help of Real Time Clock Module, the device can know what time it is. Disadvantage of this model that I used is that it’s not accurate and it misses around 5 minutes every 24h, so it’s not something that is useful because it often requires calibration, it might be also because that this module came from a Chinas supplier on AliExpress, and it may be fake. That’s why for my new clock I ordered a better version, I recommend using newer clock modules, because of the possibility of being bad and newer versions use I2C for communication, with this protocol you safe 3 pins on your Arduino which can be used for something else.
 
-Stopper:
+### Stopper:
 
 Stopper is the third and last option on this clock, it’s basically a normal stopper, I program that on Arduino so there is no module for that.
 
-## Parts I used:
+### Parts I used:
 
 | Amount | Name                            | Technical name                        |
 |--------|---------------------------------|---------------------------------------|
@@ -34,13 +34,13 @@ Stopper is the third and last option on this clock, it’s basically a normal st
 | 1      | Breadboard                      | MB102                                 |
 | 1      | Humility and temperature sensor | DHT-11                                |
 
-# System
+## System
 
 To turn on the clock the switch the side switched. When it has been turned on. Screen will show text “Select Mode”
 
 Two buttons on left and right are used for maneuvering over options, the one in the middle is for choosing options and interacting with them.
 
-## Options:
+### Options:
 
 -   One is called temperature, when you click on it you will get a screen that shows current temperature and humidity
 -   Second is current time, it shows on the 7-segment display
