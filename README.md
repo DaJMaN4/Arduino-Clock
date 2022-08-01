@@ -32,7 +32,7 @@ Stopper is the third and last option on this clock, it’s basically a normal st
 | 1      | Clock module                    | MH-Real-Time Clock Modules-2          |
 | 1      | X4 Seven segment display        | 5641AS                                |
 | 1      | Breadboard                      | MB102                                 |
-| 1      | Humility and temperature sensor | DHT-11                                |
+| 1      | Humidity and temperature sensor | DHT-11                                |
 
 ## System
 
