@@ -14,7 +14,7 @@ Current time:
 
 With help of Real Time Clock Module, the device can know what time it is. Disadvantage of this model that I used is that it’s not accurate and it misses around 5 minutes every 24h, so it’s not something that is useful because it often requires calibration, it might be also because that this module came from a Chinas supplier on AliExpress, and it may be fake. That’s why for my new clock I ordered a better version, I recommend using newer clock modules, because of the possibility of being bad and newer versions use I2C for communication, with this protocol you safe 3 pins on your Arduino which can be used for something else.
 
-Stopper
+Stopper:
 
 Stopper is the third and last option on this clock, it’s basically a normal stopper, I program that on Arduino so there is no module for that.
 
