@@ -3,34 +3,34 @@
 #include <LiquidCrystal_I2C.h>
 #include <dht.h>
 #include <virtuabotixRTC.h>
-#define dht_apin A3 // Analog Pin sensor is connected to
-dht DHT; //it needs to be here
-LiquidCrystal_I2C lcd(0x27, 16, 2); // Set the LCD address to 0x27 for a 16 chars and 2 line display
-virtuabotixRTC myRTC(A5, A4, 13); //pins conntected to rtc
-int pinA = 2;  //   \
-int pinB = 3;  //   |
-int pinC = 4;  //   |
-int pinD = 5;  //   | Variables to LCD display
-int pinE = 6;  //   |
-int pinF = 7;  //   |
-int pinG = 8;  //   /
-int D1 = 9;  //   \
-int D2 = 10; //   | variables to lcd to know which LCD part must be turn on
-int D3 = 11; //   |
-int D4 = 12; //   /
-int timer1 = 0; 
+#define dht_apin A3 
+dht DHT; 
+LiquidCrystal_I2C lcd(0x27, 16, 2); 
+virtuabotixRTC myRTC(A5, A4, 13); 
+const int pinA = 2;  
+const int pinB = 3; 
+const int pinC = 4;  
+const int pinD = 5; 
+const int pinE = 6; 
+const int pinF = 7;  
+const int pinG = 8; 
+const int D1 = 9; 
+const int D2 = 10;  
+const int D3 = 11; 
+const int D4 = 12; 
+const int timer1 = 0; 
 int timer2 = 0; 
 int timer3 = 0; 
 int timer4 = 0;
-int kk = 0; // Actually a bool that says in witch stadium loop is in a specific moment.
-int dis = 0; // same as privious
-int dele = 0; // same as privious
+int kk = 0;
+int dis = 0; 
+int dele = 0; 
 bool first_time = 0; // same as privious
 int n;
 void setup() {     
-  //myRTC.setDS1302Time(0, 53, 21, 1, 25, 10, 2021); //seting current time 
+  //myRTC.setDS1302Time(0, 53, 21, 1, 25, 10, 2021); //setting current time 
   Serial.begin(9600);
-  lcd.cursor(); lcd.begin(); lcd.backlight(); lcd.print("Select Mode"); // initialize the LCD
+  lcd.cursor(); lcd.begin(); lcd.backlight(); lcd.print("Select Mode"); 
   pinMode(pinA, OUTPUT); 
   pinMode(pinB, OUTPUT); 
   pinMode(pinC, OUTPUT); 
@@ -133,7 +133,7 @@ void tim(){ //timer
     numbers();
   }
 }
-void tem() {    // temperature       Fastest refresh should be once every two seconds (delay ;) )
+void tem() {    // temperature     
   delay(1000);
   DHT.read11(dht_apin);
   lcd.clear();
