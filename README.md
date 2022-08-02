@@ -18,7 +18,7 @@ With help of Real Time Clock Module, the device can know what time it is. Disadv
 
 Stopper is the third and last option on this clock, it’s basically a normal stopper, I program that on Arduino so there is no module for that.
 
-### Parts I used:
+### Parts:
 
 | Amount | Name                            | Technical name                        |
 |--------|---------------------------------|---------------------------------------|
